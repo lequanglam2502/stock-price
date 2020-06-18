@@ -11,7 +11,7 @@ The system is designed by client orientation. For each 1 seconds the client send
 
 Another approach we can apply by using server orientation. Whenever the server receives the updated signal from Reuters it will send the changed data and the client is designed by Observer pattern to receive and render the changed data.
 
-# Technologies Applying
+# Technology Applying
  -- Java (1.8), J2EE
  -- Spring Boot
  -- Spring Socket
