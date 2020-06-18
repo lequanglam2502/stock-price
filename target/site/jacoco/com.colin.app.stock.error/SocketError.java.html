@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SocketError.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Stock-Price Application</a> &gt; <a href="index.source.html" class="el_package">com.colin.app.stock.error</a> &gt; <span class="el_source">SocketError.java</span></div><h1>SocketError.java</h1><pre class="source lang-java linenums">package com.colin.app.stock.error;
+
+import org.springframework.http.HttpStatus;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class SocketError {
+
+    private HttpStatus status;
+    private String message;
+    private List&lt;String&gt; errors;
+
+    public SocketError() {
+<span class="nc" id="L15">        super();</span>
+<span class="nc" id="L16">    }</span>
+
+    public SocketError(final HttpStatus status, final String message, final List&lt;String&gt; errors) {
+<span class="nc" id="L19">        super();</span>
+<span class="nc" id="L20">        this.status = status;</span>
+<span class="nc" id="L21">        this.message = message;</span>
+<span class="nc" id="L22">        this.errors = errors;</span>
+<span class="nc" id="L23">    }</span>
+
+    public SocketError(final HttpStatus status, final String message, final String error) {
+<span class="nc" id="L26">        super();</span>
+<span class="nc" id="L27">        this.status = status;</span>
+<span class="nc" id="L28">        this.message = message;</span>
+<span class="nc" id="L29">        errors = Arrays.asList(error);</span>
+<span class="nc" id="L30">    }</span>
+
+    public HttpStatus getStatus() {
+<span class="nc" id="L33">        return status;</span>
+    }
+
+    public void setStatus(final HttpStatus status) {
+<span class="nc" id="L37">        this.status = status;</span>
+<span class="nc" id="L38">    }</span>
+
+    public String getMessage() {
+<span class="nc" id="L41">        return message;</span>
+    }
+
+    public void setMessage(final String message) {
+<span class="nc" id="L45">        this.message = message;</span>
+<span class="nc" id="L46">    }</span>
+
+    public List&lt;String&gt; getErrors() {
+<span class="nc" id="L49">        return errors;</span>
+    }
+
+    public void setErrors(final List&lt;String&gt; errors) {
+<span class="nc" id="L53">        this.errors = errors;</span>
+<span class="nc" id="L54">    }</span>
+
+    public void setError(final String error) {
+<span class="nc" id="L57">        errors = Arrays.asList(error);</span>
+<span class="nc" id="L58">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

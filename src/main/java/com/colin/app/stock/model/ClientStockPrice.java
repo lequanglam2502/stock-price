@@ -19,6 +19,7 @@ public class ClientStockPrice {
 		this.trend = trend;
 	}
 
+	/*
 	public String getSymbol() {
 		return symbol;
 	}
@@ -42,4 +43,6 @@ public class ClientStockPrice {
 	public void setTrend(String trend) {
 		this.trend = trend;
 	}
+	
+	*/
 }

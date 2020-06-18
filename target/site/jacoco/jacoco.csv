@@ -1,0 +1,15 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Stock-Price Application,com.colin.app.stock.error,SocketError,64,0,0,0,23,0,10,0,10,0
+Stock-Price Application,com.colin.app.handler,CustomAuthenticationSuccessHandler,7,0,0,0,3,0,2,0,2,0
+Stock-Price Application,com.colin.app.handler,CustomAuthenticationFailureHandler,7,0,0,0,3,0,2,0,2,0
+Stock-Price Application,com.colin.app,Application.new WebMvcConfigurerAdapter() {...},44,0,0,0,6,0,2,0,2,0
+Stock-Price Application,com.colin.app,Application,33,0,0,0,10,0,6,0,6,0
+Stock-Price Application,com.colin.app.stock.controller,StockPriceSocketController,7,0,0,0,2,0,2,0,2,0
+Stock-Price Application,com.colin.app.config,ApplicationWebMvcConfig,18,0,0,0,7,0,3,0,3,0
+Stock-Price Application,com.colin.app.config,WebSocketConfig,38,0,0,0,8,0,3,0,3,0
+Stock-Price Application,com.colin.app.security,SecurityConfig,81,0,0,0,28,0,5,0,5,0
+Stock-Price Application,com.colin.app.security,WebConfig,41,0,0,0,6,0,2,0,2,0
+Stock-Price Application,com.colin.app.stock.service.impl,ReutersService,145,0,6,0,21,0,7,0,4,0
+Stock-Price Application,com.colin.app.stock.model,ListClientStockPrice,10,0,0,0,4,0,3,0,3,0
+Stock-Price Application,com.colin.app.stock.model,ClientStockPrice,33,0,0,0,14,0,7,0,7,0
+Stock-Price Application,com.colin.app.stock.model,ThirdPartyStockPrice,31,0,0,0,13,0,9,0,9,0

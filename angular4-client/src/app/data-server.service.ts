@@ -3,6 +3,9 @@ import 'rxjs/add/operator/toPromise';
 
 import { StockPrice } from './stockprice';
 
+//import * as SockJS from '../assets/sockjs.min';
+//import { Stomp } from '../assets/stomp.min';
+
 declare var SockJS;
 declare var Stomp;
 
