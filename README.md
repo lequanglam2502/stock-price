@@ -27,7 +27,7 @@ Another approach we can apply by using server orientation. Whenever the server r
  -- Run the Angular App with command: npm start
  -- Open browser for url http://localhost:4200/
 
-# Angular4Client Test
+# Angular4 Client Test
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 ## Development Server
