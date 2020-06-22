@@ -46,6 +46,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running Unit Tests
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run ng test --code-coverage to generate code coverage
 
 ## Running end-to-end Tests
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
