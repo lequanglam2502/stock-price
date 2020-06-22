@@ -27,6 +27,11 @@ Another approach we can apply by using server orientation. Whenever the server r
  -- Run the Angular App with command: npm start
  -- Open browser for url http://localhost:4200/
 
+# Jacoco Server Test
+add Jacoco plugin in the POM file.
+Run the test to generate the code coverage report
+install EclEmma Eclipse plugin to see the number of lines has been test
+
 # Angular4 Client Test
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
