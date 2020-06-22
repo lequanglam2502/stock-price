@@ -1,11 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { DataService } from './data-server.service';
 
-
+/* The test for service */
 describe('UsersService', () => {
 	let dataService: DataService;
-	
-	
 
 	beforeEach(() => {
 		TestBed.configureTestingModule({
@@ -19,13 +17,12 @@ describe('UsersService', () => {
 		expect(dataService).toBeTruthy();
 	});
 
-	/*describe('pingData', () => {
+	describe('pingData', () => {
 		it('should return stock price data', () => {
 			dataService.initializeWebSocketConnection();
 			dataService.pingData();
 
 			expect(dataService.data).toBeTruthy();
 		});
-	});*/
-
+	});
 });

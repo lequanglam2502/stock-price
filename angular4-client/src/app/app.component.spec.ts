@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+
+/* The test for the app component */
 describe('AppComponent', () => {
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
@@ -27,5 +29,4 @@ describe('AppComponent', () => {
 		const compiled = fixture.debugElement.nativeElement;
 		expect(compiled.querySelector('h2').textContent).toContain('DBS Real Time Stock Pricing Display');
 	}));
-
 });

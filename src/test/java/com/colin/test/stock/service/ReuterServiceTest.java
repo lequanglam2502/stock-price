@@ -1,5 +1,6 @@
 package com.colin.test.stock.service;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.util.List;
@@ -7,37 +8,39 @@ import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.colin.app.stock.controller.StockPriceSocketController;
 import com.colin.app.stock.model.ClientStockPrice;
 import com.colin.app.stock.service.impl.ReutersService;
 
+/**
+ * This test for service that getting real time data from Reuters
+ * 
+ * @author colinle
+ *
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class ReuterServiceTest {
-	@Mock
-	ReutersService reutersService;
-
 	@InjectMocks
-	StockPriceSocketController stockPriceSocketController;
+	ReutersService reutersService;
 
 	/**
 	 * Test service getRealTimeDataReuters
 	 */
 	@Test
 	public void testGetRealTimeDataReuters() {
-		ReutersService service = new ReutersService();
-
-		List<ClientStockPrice> result = service.getRealTimeDataReuter();
+		List<ClientStockPrice> result = reutersService.getRealTimeDataReuter();
 		assertNotNull(result);
+		assertEquals(result.size(), 5);
 	}
 
 	/**
-	 * Test controller
+	 * Test adjustPrice method
 	 */
 	@Test
-	public void testSendMessageController() {
-		assertNotNull(stockPriceSocketController.sendMessage("client socket asks"));
+	public void testAdjustPrice() {
+		String result = reutersService.adjustPrice(5);
+		assertEquals(result, "50000.00");
 	}
+
 }
